@@ -1,0 +1,41 @@
+Transaentive Dependency
+
+npm install parcel 
+npx parcel index.html(root path)
+
+
+for now i was using cdn for impliment react - but it's not a good idea 
+--- in this i will install react and react-dom in the package
+
+#parcel   --  https://parceljs.org/
+1. its create a local server for you 
+2. Dev build
+3. HMR = Hot Module Replacement (Auto refresh page while save the file)
+4. File Watching Algorithm - written in c++ 
+5. Caching - Faster Build [4ms/ 3ms/8ms]   -- a folder with name .parcel-cache
+6. Image Optimization 
+7. Minification of file
+8. Bundling
+9. Compressing the files 
+10. Consistent Hashing 
+11. Code Splitting 
+12. Diffrential Bundling 
+13. Daignostic
+14. Error Handling 
+15. HTTPs
+16. Tree Shaking Algorithm - remove unused code 
+17. Different dev and prod bundles 
+
+
+,
+npx parcel build index.htlm   ----  error =  "main": "app.js",    --- remove this line 
+
+crate a new folder with name of "dist"
+----------------------------------------------------- browser list -----------------------------------------
+
+site - https://browserslist.dev/?q=bGFzdCAxMCBjaHJvbWUgdmVyc2lvbnM%3D
+       https://github.com/browserslist/browserslist#query-composition
+
+ "browserlist" : {
+    "last 2 version"
+ }
