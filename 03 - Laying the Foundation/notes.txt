@@ -1,0 +1,14 @@
+learn about JSX -
+
+JSX - (transpiled before it reaches the JS engine , transpiled done by parcle and it's gave reposibility to Babel) 
+Bable - https://babeljs.io/
+        https://babeljs.io/docs/
+        normal JS package, convert jsx to react code that js engine can undersatnd 
+
+        not a js syntex
+        parcle is managing those all things 
+
+
+component composition - 
+
+malicious attack is auto managed by JSX
