@@ -1,0 +1,29 @@
+Food Ordering App -  Swiggy, Zomato , iSmart
+-------------------------------------
+How such app are build -
+Header
+resourents list 
+go to cake bazar 
+add to cart 
+checkout 
+--------------------------------------
+
+1. Planing 
+        a. what u r going to build, how you can build 
+        b. Name - Namaste Food 
+
+
+Prop - passing a prop to a function is just passing a rgs to a normal js function 
+
+JSON viewer chrome extenstion 
+Config Driven UI - controlling the UI by Config (from API data)
+
+--
+we have to pass the key if we are using any map or loop..
+ RestDataList.map((restaurant) => <RestaurantCard key={restaurant.info.id} restData = {restaurant}/>)
+Never used index as a KEYs  --  https://robinpokorny.com/blog/index-as-a-key-is-an-anti-pattern/
+
+
+
+Rendring
+Re-Rednring
