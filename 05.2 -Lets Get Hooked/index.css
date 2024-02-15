@@ -1,0 +1,52 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.logo {
+    width:100px;
+}
+.nav-items > ul {
+    display: flex;
+
+}
+.nav-items > ul > li{
+    margin: 10px;
+    list-style: none;
+    padding: 0px 20px;
+    font-size: 24px;
+}
+
+/*  */
+.res-card {
+    margin: 5px;
+    width: 250px;
+    height: 450px;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.res-card:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+.filter {
+    padding: 10px 50px;
+}
+.res-logo {
+    width: 240px; 
+    height: 240px;
+        padding: 2.5px;
+}
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.ced_card_span {
+	display: inherit;
+}
+.filter-btn {
+	cursor: pointer;
+	background: gray;
+	color: white;
+}

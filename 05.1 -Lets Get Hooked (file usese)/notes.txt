@@ -1,0 +1,17 @@
+two types of import and export 
+
+
+- default export import 
+    export default component_name/element_name
+
+    import component_name/element_name from "path"
+
+
+- named export import 
+
+    export const component/element_name
+    import {component/element_name} from "path"
+
+
+file should not execedd 100 lines of code.
+Question - can i do default as named export ?

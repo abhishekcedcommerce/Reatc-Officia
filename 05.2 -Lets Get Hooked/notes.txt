@@ -1,0 +1,29 @@
+hooks - Normal JS utility function written by Facebook developers 
+two importantr hooks 
+1 - useState() - superpowerful state variables in react
+2 - useEffects()
+
+
+
+* Reconciliation Algorithm --- React Fiber (-----both are same---------)
+----------------------------
+
+we have a dom (dom means like a tree) 
+
+--   res-container 
+        15 restro_cards                             3 restro_cards
+    Virtual DOM/ Actul DOM 
+    Virtual DOM - Normal JS object or nested object/is represnetation of Actual DOM - {} that object of react Element/Components [React.CreateElemet('h1'{},"child")];
+        now UI changes from 15 cards to 3 filter cards 
+
+
+
+
+Diff Alogrithm -- findout the diffrent btw updated Virtual DOM and previous virtual DOM (15 crads to 3 cards) 
+
+
+* Incremental reandering 
+
+
+https://github.com/acdlite/react-fiber-architecture
+
