@@ -3,8 +3,6 @@ two importantr hooks
 1 - useState() - superpowerful state variables in react
 2 - useEffects()
 
-
-
 * Reconciliation Algorithm --- React Fiber (-----both are same---------)
 ----------------------------
 

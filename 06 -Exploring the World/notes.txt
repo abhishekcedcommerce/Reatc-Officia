@@ -1,0 +1,27 @@
+Monolith Architecture 
+Microservices Architecture 
+
+
+API Call - 
+Approach -1 
+    app loads ----> make an API call to fetch the data [take 500ms]------> get the data --- -- > rendred the UI 
+Approach -2 
+    app loads -----> Rendered the UI[skelton] ---> now we will make an API call ------>get the data -----> re-render the UI
+
+
+In React we will alwasy be use 2nd approach - its a better approach --- and provide better UX
+
+
+
+useEffect -- Hooks
+
+
+--- Learn about CORS from akshay saini
+--- need to use Allow Cros Access Chrome extension to call the API from Local
+--- need to learn optional chaining -- json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
+--- Shimmer UI - 
+--- React Fiber 
+--- Why React Application is Faster ?
+    React Fiber the new Reconcilation alogorithm , its findout the diffrence btw two virtual DOM and 
+    if find the diffrence in DOM in that case it will update the DOM
+
