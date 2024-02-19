@@ -15,7 +15,7 @@ const Body = () => {
     console.log("useEffect Called");
     fetchData();
   }, []);
-  // console.log("Body Renderd"); // 1st it will execut then the useeffect will call
+  console.log("Body Renderd"); // 1st it will execut then the useeffect will call
 
   const fetchData = async () => {
     const data = await fetch(
@@ -34,48 +34,10 @@ const Body = () => {
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
 
-   /* console.log(
+    console.log(
       json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants
-    );*/
+    );
   };
-/*
-  // conditional Rendring
-  if (listOfRestaurants.length === 0) {
-    return <Shimmer />;
-  }
-
-  //  hooks os just a JS normal function
-  return (
-    <div className="body">
-      <div className="filter">
-        <button
-          className="filter-btn"
-          onClick={() => {
-            console.log("button clicked");
-            // filter logic here
-            const FilteredRestDataList = listOfRestaurants.filter(
-              (res) => res.info.avgRating > 4.3
-            );
-            setlistOfRestaurants(FilteredRestDataList);
-            // console.log(res.info.avgRating);
-            console.log(FilteredRestDataList);
-          }}
-          onMouseOver={() => {
-            console.log("hovered");
-          }}
-        >
-          Top Rated Restaurants
-        </button>
-      </div>
-      <div className="res-container">
-        {listOfRestaurants.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} restData={restaurant} />
-        ))}
-      </div>
-    </div>
-  );*/
-
-
   // by using ternary operator
   return listOfRestaurants.length === 0 ? <Shimmer /> : (
     <div className="body">

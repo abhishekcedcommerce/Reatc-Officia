@@ -1,0 +1,16 @@
+do not create useState 
+- inside condiiotn/ loop / or in function 
+
+
+Routes in React -- https://reactrouter.com/en/main
+        npm i react-router-dom
+
+from - react-router-dom
+createBrowserRouter, 
+RouterProvider, 
+Outlet
+
+
+
+
+never used anchor text because pasge got refreshed
