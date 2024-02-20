@@ -1,0 +1,44 @@
+componentdidmount - 
+                is used for make an API calls 
+        why ? -- quickly render my compnent  => api call => then mofiy the data 
+
+
+
+--------------this is wrong(when there are many children)-----------------------
+- Parent Constructor
+- Parent Render 
+
+        - Abhishek constrcutor 
+        - Abhishek Render 
+        - Abhishek CompoentDidMaount
+
+        - Elon Contructor 
+        - Elon Render
+        - Elon CompoentDidMaount 
+
+- Parent CompoentDidMaount
+
+
+--------------this is best way (when there are many children)-----------------------
+- Parent Constructor
+- Parent Render 
+
+        - Abhishek (First Child ) constrcutor 
+        - Abhishek (First Child )Render 
+        
+
+        - Elon (Second Child) Contructor 
+        - Elon (Second Child) Render
+        
+                < DOM UPDATED - IN SINGLE BATCHING > 
+
+        - Abhishek (First Child )CompoentDidMaount
+        - Elon (Second Child) CompoentDidMaount 
+
+- Parent CompoentDidMaount
+
+
+
+Daigram React Life Cycle Daigram -  https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+Github API DOC - https://docs.github.com/en/rest/users/users?apiVersion=2022-11-28#get-a-user
