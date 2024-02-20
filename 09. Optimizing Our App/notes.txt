@@ -1,0 +1,16 @@
+Single Responsbility Principal 
+
+for check online/offline status -- https://developer.mozilla.org/en-US/docs/Web/API/Window/online_event
+
+
+Linters for React.
+
+App chunking / Code Spliting 
+
+        import React, { lazy, Suspense } from "react";
+
+        const Grocery = lazy(() => import('./components/Grocery'));
+        {
+                path:'/grocery',
+                element : <Suspense fallback={<h1>Loading....</h1>}><Grocery /></Suspense>,
+        }
