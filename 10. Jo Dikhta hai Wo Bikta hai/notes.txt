@@ -1,0 +1,14 @@
+Sass CSS -                                                   https://sass-lang.com/
+(Choose this one , it's the better way) - Styled Component - https://styled-components.com/
+Matrtial UI -                                                https://mui.com/material-ui/
+Bootstrap Html/css/js                                        https://getbootstrap.com/
+Chakra Ui                                                    https://chakra-ui.com/
+Ant Design                                                   https://ant.design/
+Talwind CSS                                                  https://tailwindcss.com/
+                                                                https://tailwindcss.com/docs/guides/parcel
+POST CSS                                                     https://postcss.org/
+
+
+https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
+
+* parcel is used postcssrc to understand Talwind
