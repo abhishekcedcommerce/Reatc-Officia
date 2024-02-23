@@ -1,0 +1,32 @@
+Hogher Order Compnet - is a function that takens a component and return a component 
+OED - its just a JS function
+
+
+
+All the React App has 2 layer
+1. UI layer  (UI layer is powered by Data Layer -JS)
+2. Data layer (state/props/Local variable/ JS code)
+
+
+we are going to learn about Data Layer.
+
+Controlled & UnControlled component
+Lifting State UP
+Props Drilling -- data flow from parent to child compoenent normaly is known as props drilling, but suppose you have high level of parent and child component
+-----
+we should avoid props drilling - so how i do that  ---- super poer -- react context 
+
+
+react context  -- https://react.dev/reference/react/createContext
+-- login data, theme (dark/light)  data that need anywhere in the App 
+
+
+
+https://www.geeksforgeeks.org/what-is-prop-drilling-and-how-to-avoid-it/
+
+debuging tool - react dev tool - chrome
+
+Data Management Library -- Redux and Redux ToolKit 
+
+
+-----------------here I need to learn Context Again --------------------
