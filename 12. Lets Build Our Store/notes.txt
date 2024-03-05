@@ -1,0 +1,41 @@
+
+Redux Library  - https://redux.js.org/introduction/getting-started
+        React - redux
+        Redux Toolkit  ( we are using redux- Toolkit ---  React Redux)  --- https://redux-toolkit.js.org/introduction/getting-started
+
+        
+Zustand Library -  https://github.com/pmndrs/zustand
+
+
+React Dev Tools/ Redux Dev Tools
+
+------------
+Redux -- Redux and React is saperate Library 
+------------
+A Predictable State Container for JS Apps
+Application become easier to debug
+Redux is not mandatory
+
+
+
+#Redux toolkit 
+- install libraries  ( @reduxjs/toolkit  and react-redux)
+https://www.npmjs.com/package/@reduxjs/toolkit
+https://www.npmjs.com/package/react-redux
+
+
+- Build our store
+- Connect our store to the APP 
+- We will create Cart Slice
+- Dispatch (action)
+- Read the data from selector
+
+
+vanila Redux -- 
+        dont mutate state, it was prohebitated.
+        state.items.push(action.payload);
+        Immer - https://immerjs.github.io/immer/
+
+
+Redux DevTools -- https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+

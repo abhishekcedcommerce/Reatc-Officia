@@ -1,0 +1,89 @@
+Testing
+------------------
+Types of testing (developer can do)-
+1. Unit Testing (React component in isolation like,  just header component, or just restorantcards component )
+2. Integration Testing (twstin multiple component - to check the application flow -click event, listing)
+3. End to End Testing [E2E Testing](from user landing to left the application, what the user flow across the application)
+                - Sypress
+                and few other tool
+
+
+
+only focusing on first two testing.
+
+
+Libraries 
+
+1. React Testing Library -- https://testing-library.com/docs/react-testing-library/intro/
+   -- DOM Testing library
+   -- if we are using react in this case react library already there
+                       1. npm i -D @testing-library/react
+   -- React testting library using - JEST behind the scene --- https://jestjs.io/
+                        2. npm i -D jest
+   -- JEST intern using Babel
+                        3. npm install --save-dev babel-jest @babel/core @babel/preset-env
+                now need to configure babel -
+                        4.  need to careate a file with name of bable.config.js on root label of app 
+                and paste the code - 
+                        module.exports = {
+                                presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+                        };
+
+
+* Parcel also using Babel and Now we using JEST Bable , and it will override the cinfiguation of parcel bable so it will create conflict 
+so we have to change Parcel behaviour.
+                
+                https://parceljs.org/languages/javascript/#babel
+                To disable Babel transpilation in Parcel, override the default Parcel config for JavaScript to exclude @parcel/transformer-babel.
+
+                        5. create a file on root - .pracelrc
+                        6. and paste he below code to disable the parcel default babel configure
+                        {
+                                "extends": "@parcel/config-default",
+                                "transformers": {
+                                "*.{js,mjs,jsx,cjs,ts,tsx}": [
+                                "@parcel/transformer-js",
+                                "@parcel/transformer-react-refresh-wrap"
+                                ]
+                        }
+        }
+
+        How we can run Testcase - 
+        npm run test / you have to check from package.json -- sscript section
+
+                        7. Jest Configuration
+                                npx jest --init
+                                A new file with name of - jest.confg.js 
+
+                        8. install jest-envoirnmet-jsdom
+                        https://testing-library.com/docs/react-testing-library/setup#jest-28 
+                        npm install --save-dev jest-environment-jsdom
+
+                
+
+Lets start writing test cases - a dummy test case 
+crete a __test__ folder inside the component folder
+_ _ is knownm as dunder -use as reserved word 
+file name - 
+Headers.test.js
+Headers.test.ts
+Headers.spec.js
+Headers.spec.ts
+
+
+
+                9. install @babel/preset-react 
+                 npm i -D @babel/preset-react 
+                 install this librbay to allow jsx/ abbel in react test
+
+                 modify the bael.config.js --- 
+                 module.exports = {
+                                presets: [
+                                        ['@babel/preset-env', {targets: {node: 'current'}}],
+                                        ["@babel/preset-react", {runtime : "automatic"}]
+                                        ],
+                                };
+
+                
+                10. install - @testing-library/jest-dom 
+                        npm i -D @testing-library/jest-dom
